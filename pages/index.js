@@ -7,128 +7,45 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <>
-      <Head>
-        <title>Matt Herzog</title>
-        <meta name="description" content="Matt Herzog Portfolio Landing Page" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <main className={styles.main}>
-        <div className={styles.description}>
-          <p className="text-3xl font-bold underline">
-            Get started by editing&nbsp;
-            <code className={styles.code}>pages/index.js</code>
+    <div className="flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pb-16">
+      hey
+      <div className="flex flex-col-reverse sm:flex-row items-start">
+        hi
+        <div className="flex flex-col pr-8">
+          hello
+          <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white">
+            Matt Herzog
+          </h1>
+          <h2 className="text-gray-700 dark:text-gray-200 mb-4">
+            Software Engineer @ <span className="font-semibold">Zealogics</span>
+          </h2>
+          <p className="text-gray-600 dark:text-gray-400 mb-16">
+            Software engineer expereince with fullstack developemnt
           </p>
         </div>
-        <div>
-          <Image src="/pic.JPG" width={180} height={37} />
-        </div>
-
-        <div className={styles.center}>
+        <div className="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto">
           <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
+            alt="Lee Robinson"
+            height={135}
+            width={135}
+            src="/pic.jpg"
+            sizes="30vw"
             priority
+            className="rounded-full"
           />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
-          </div>
         </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-          <h2 className={styles.thirteen}>Hire me</h2>
-          <h2 className={styles.thirteen}>Twitter</h2>
-          <h2 className={styles.thirteen}>Linkedin</h2>
-          <h2 className={styles.thirteen}>Github</h2>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
-        </div>
-        <div class="columns-1 hover:columns-1 font-mono">
-          <h1>Zealogics</h1>
-          <h1>Salesforce</h1>
-          <h1>memoryBlue</h1>
-        </div>
-        <footer>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </footer>
-      </main>
-    </>
+      </div>
+      <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white">
+        Links
+      </h3>
+      <div className="flex gap-6 flex-col md:flex-row">
+        <button
+          type="button"
+          class="outline-style: solid; bg-gradient-to-r from-cyan-500 to-blue-500"
+        >
+          Hover me
+        </button>
+      </div>
+    </div>
   );
 }
